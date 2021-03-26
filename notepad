@@ -1,0 +1,9 @@
+
+typescript 사용
+ts --(webpack)-> js ---> babel ---> js
+
+index.html을 무시하곤 하는데
+검색결과에 가장 먼저 잡히고 성능에 큰 영향을 미치는게 index.html
+SPA 전역에 영향을 끼치는 css를 js로딩 전에 몰아두고
+사용자 경험에 덜 중요한 css는 나중으로 미룬다.
+
