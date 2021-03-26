@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "lib": ["ES2020", "DOM"],
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "target": "es5",
+    "strict": true,   // typescript 할거면 항상 켜는게 좋다.
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {      // 절대경로처럼 import 가능. ../../ 이런거 없다.
+      "@hooks/*": ["hooks/*"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"],
+      "@typings/*": ["typings/*"]
+    }
+  }
+}
